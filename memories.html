@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our Memories ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="hearts"></div>
+
+<h1 style="margin-top:40px;">Our Little Moments, Our Big Story</h1>
+<p>Every picture here holds a memory I never want to lose.</p>
+
+<div class="gallery">
+  <div class="card"><img src="img1.jpeg"><span>The day our story quietly began.</span></div>
+  <div class="card"><img src="img2.jpeg"><span>Our first smile captured together.</span></div>
+  <div class="card"><img src="img3.jpeg"><span>One moment, a thousand feelings...🌹</span></div>
+  <div class="card"><img src="img4.jpeg"><span>Laughing with you is my favorite habit.</span></div>
+  <div class="card"><img src="img5.jpeg"><span>A memory I wish I could pause forever.</span></div>
+  <div class="card"><img src="img6.jpeg"><span>You + Me = My safest place.</span></div>
+  <div class="card"><img src="img6.1.jpeg"><span>Special Moments..❤️..</span></div>
+  <div class="card"><img src="img6.2.jpeg"><span>Unfortunate but lovely... 🥰</span></div>
+  <div class="card"><img src="img7.jpeg"><span>Every picture holds a piece of my heart.</span></div>
+  <div class="card"><img src="img8.jpeg"><span>Just us, just love, just happiness.</span></div>
+  <div class="card"><img src="img9.jpeg"><span>A small moment, a big memory.</span></div>
+  <div class="card"><img src="img10.jpeg"><span>And this is only the beginning…</span></div>
+</div>
+<script>
+const hearts = document.querySelector(".hearts");
+
+for (let i = 0; i < 30; i++) {
+  const heart = document.createElement("span");
+  heart.innerHTML = "🌻";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (6 + Math.random() * 4) + "s";
+  heart.style.fontSize = (15 + Math.random() * 20) + "px";
+  hearts.appendChild(heart);
+}
+</script>
+
+</body>
+</html>

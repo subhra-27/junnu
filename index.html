@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For Junnu ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .text {
+      font-family: 'Great Vibes', cursive;
+      font-size: 60px;
+      color: white;
+      opacity: 0;
+      animation: fadeIn 3s ease forwards;
+      text-shadow: 0 0 25px pink;
+      cursor: pointer;
+    }
+
+    .text:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="text" onclick="goNext()">
+  Hey Junnu… I made something for you ❤️
+</div>
+
+<script>
+  function goNext() {
+    window.location.href = "main.html";
+  }
+</script>
+
+</body>
+</html>
